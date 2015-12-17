@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">拍摄并上传视频</string>
+
+    <string name="hello">Hello World, CameraActivity!</string>
+
+
+</resources>
