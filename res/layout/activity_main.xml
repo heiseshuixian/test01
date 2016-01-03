@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <VideoView
+        android:id="@+id/video_VideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始裁剪" />
+
+    <Button
+        android:id="@+id/btn_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="结束裁剪" />
+    
+      <Button
+        android:id="@+id/btn_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="开始播放裁剪" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ff242424" >
+
+        <ImageView
+            android:id="@+id/video_img_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/start_video_df" />
+
+        <TextView
+            android:id="@+id/video_txt_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/video_img_start"
+            android:text="00:00:00"
+            android:textColor="@android:color/white" />
+
+        <SeekBar
+            android:id="@+id/video_videoview_pres_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/video_txt_max_time"
+            android:layout_toRightOf="@+id/video_txt_current_time"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:max="100"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progressDrawable="@drawable/seekbar_progress_bg"
+            android:thumb="@drawable/seekbar_slider" />
+
+        <TextView
+            android:id="@+id/video_txt_max_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_video"
+            android:text="00:00:00"
+            android:textColor="@android:color/white" />
+        
+        <Button 
+            android:id="@+id/btn_video"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="拍摄"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

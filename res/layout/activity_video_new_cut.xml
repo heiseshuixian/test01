@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ff1b305d" >
+
+    <RelativeLayout
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@android:color/black" >
+
+        <ImageView
+            android:id="@+id/video_new_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/icon_go_big_white_left" />
+
+        <TextView
+            android:id="@+id/video_new_txt_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="完成"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_new_cut_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_title"
+        android:layout_marginTop="20dp" >
+
+        <VideoView
+            android:id="@+id/video_new_cut_videoview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <!--
+             <ImageView
+            android:id="@+id/video_new_cut_img"
+            android:layout_centerInParent="true"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        -->
+
+        <ImageView
+            android:id="@+id/video_new_cut_img_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/image_play_video_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/video_new_cut_relative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" >
+
+        <com.example.shipin.MyRecyclerView
+            android:id="@+id/recyclerview_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/video_new_cut_relative1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_video_new_progress_bg" >
+
+            <Button
+                android:id="@+id/video_new_cut_txt_left"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@null" />
+
+            <Button
+                android:id="@+id/video_new_cut_txt_right"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/video_new_cut_img_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/black_70" />
+
+        <ImageView
+            android:id="@+id/video_new_cut_img_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/black_70" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/video_new_cut_txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
