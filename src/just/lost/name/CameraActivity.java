@@ -20,6 +20,7 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class CameraActivity extends Activity {
 	/** Called when the activity is first created. */
@@ -33,16 +34,34 @@ public class CameraActivity extends Activity {
 			ProgressBar pb = (ProgressBar) findViewById(R.id.progressBar1);
 			switch (msg.what) {
 			case 0:
-				tv.setText("ÉÏ´«³É¹¦¡£");	
+				tv.setText("ï¿½Ï´ï¿½ï¿½É¹ï¿½ï¿½ï¿½");	
 				pb.setVisibility(ProgressBar.GONE);
+				Toast.makeText(getApplicationContext(), "ï¿½Ï´ï¿½ï¿½É¹ï¿½ï¿½ï¿½",
+					     Toast.LENGTH_SHORT).show();
+				Intent intent = new Intent();
+                intent.setClass(CameraActivity.this, Test01Activity.class);
+                startActivity(intent);
+                finish();
 				break;
 			case 1:
-				tv.setText("ÎÞ¿ÉÓÃÍøÂç¡£");	
+				tv.setText("ï¿½Þ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç¡£");	
 				pb.setVisibility(ProgressBar.GONE);
+				Toast.makeText(getApplicationContext(), "ï¿½Þ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç¡£",
+					     Toast.LENGTH_SHORT).show();
+				 intent = new Intent();
+               intent.setClass(CameraActivity.this, Test01Activity.class);
+               startActivity(intent);
+               finish();
 				break;
 			case 2:
-				tv.setText("ÕÒ²»µ½·þÎñÆ÷µØÖ·");	
+				tv.setText("ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·");	
 				pb.setVisibility(ProgressBar.GONE);
+				Toast.makeText(getApplicationContext(), "ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½",
+					     Toast.LENGTH_SHORT).show();
+				 intent = new Intent();
+               intent.setClass(CameraActivity.this, Test01Activity.class);
+               startActivity(intent);
+               finish();
 				break;				
 			default:
 				break;
@@ -55,12 +74,9 @@ public class CameraActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-System.out.println("×¼±¸Â¼ÖÆÊÓÆµ");
 		Intent intent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
 		intent.putExtra(MediaStore.EXTRA_VIDEO_QUALITY, 1);
-		System.out.println("Â¼ÖÆÍê±Ï");
 		startActivityForResult(intent, 1);
-		System.out.println("activity³É¹¦");
 
 	}
 
@@ -117,7 +133,7 @@ System.out.println("×¼±¸Â¼ÖÆÊÓÆµ");
 	
 	public void uploadFile(String imageFilePath) {
 		String actionUrl = "http://192.168.1.103:8080/testsever/Videoservlet";
-		System.out.println("»ñÈ¡µØÖ·");
+		System.out.println("ï¿½ï¿½È¡ï¿½ï¿½Ö·");
 		try {
 			URL url = new URL(actionUrl);
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();

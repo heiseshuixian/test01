@@ -1,14 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/psBtn"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_x="53dp"
+        android:layout_y="290dp"
+        android:text="个人信息" />
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="55dp"
+        android:layout_y="170dp"
+        android:text="网络视频" />
+
+    <Button
+        android:id="@+id/qdBtn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_x="178dp"
+        android:layout_y="170dp"
+        android:text="每日签到" />
+
+    <Button
+        android:id="@+id/misBtn"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_x="187dp"
+        android:layout_y="289dp"
+        android:text="任务管理" />
+
+    <Button
+        android:id="@+id/frdBtn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_x="174dp"
+        android:layout_y="44dp"
+        android:text="好友管理" />
 
     <Button
         android:id="@+id/recBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="50dp"
-        android:layout_y="41dp"
+        android:layout_x="52dp"
+        android:layout_y="48dp"
         android:text="视频录制" />
 
 </AbsoluteLayout>

@@ -4,6 +4,8 @@
     <string name="app_name">拍摄并上传视频</string>
 
     <string name="hello">Hello World, CameraActivity!</string>
-
+	<string name="btn_load">加载</string>
+	<string name="btn_play">播放</string>
+	<string name="btn_pause">暂停</string>
 
 </resources>

@@ -1,7 +1,6 @@
 package just.lost.name;
 
 import android.app.Activity;
-import android.*;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +19,37 @@ public class Test01Activity extends Activity {
                 // TODO Auto-generated method stub
                 Intent intent = new Intent();
                 intent.setClass(Test01Activity.this, CameraActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        Button listBtn = (Button)findViewById(R.id.misBtn);
+        listBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent();
+                intent.setClass(Test01Activity.this, videolistActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        Button frdBtn = (Button)findViewById(R.id.frdBtn);
+        frdBtn.setOnClickListener(new View.OnClickListener() {
+        	public void onClick(View v) {
+        		// TODO Auto-generated method stub
+        		Intent intent = new Intent();
+        		intent.setClass(Test01Activity.this, VideoActivity.class);
+        		startActivity(intent);
+        		finish();
+        	}
+        });
+        
+        Button playBtn = (Button)findViewById(R.id.playBtn);
+        playBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent();
+                intent.setClass(Test01Activity.this, VideodownActivity.class);
                 startActivity(intent);
                 finish();
             }

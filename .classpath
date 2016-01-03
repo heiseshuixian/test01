@@ -4,5 +4,9 @@
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="C:/Users/Apple/Desktop/android_调用摄像头拍摄一段视频并上传到服务器/mysql-connector-java-5.1.38.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Apple/Desktop/android_调用摄像头拍摄一段视频并上传到服务器/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Apple/Desktop/android_调用摄像头拍摄一段视频并上传到服务器/android-support-v7-recyclerview.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Apple/Desktop/android_调用摄像头拍摄一段视频并上传到服务器/isoviewer-1.0-RC-27.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
