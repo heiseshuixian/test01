@@ -104,7 +104,7 @@ public class VideoNewCutActivity extends BaseActivity{
 	/** 滚动的长度 */
 	private int Scroll_lenth = 0;
 	/** 路径 */
-	private String Ppath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/videoTest/Image/";
+	private String Ppath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/手机U盘/相机/";
 	@Override
 	protected int getContentViewId() {
 		return R.layout.activity_video_new_cut;

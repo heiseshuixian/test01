@@ -38,7 +38,7 @@ public class VideoActivity extends BaseActivity  {
 		super.initGetData();
 		if (getIntent().getExtras()!=null) {
 			//path = getIntent().getExtras().getString("path");
-		 uri = Uri.parse("http://192.168.1.103:8080/testsever/img/img_1.mp4");
+		 uri = Uri.parse("http://192.168.1.104:8080/testsever/img/img_1.mp4");
 		}
 	}
 

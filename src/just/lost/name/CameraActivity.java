@@ -118,7 +118,7 @@ public class CameraActivity extends Activity {
 			super.run();	
 			ConnectionDetector cd = new ConnectionDetector(CameraActivity.this);
 			if(cd.isConnectingToInternet()){
-				if(cd.checkURL("http://192.168.1.103:8080/testsever/Videoservlet")){
+				if(cd.checkURL("http://192.168.1.104:8080/testsever/Videoservlet")){
 					uploadFile(filpath);
 					handle.sendEmptyMessage(0);
 				}else{
@@ -132,7 +132,7 @@ public class CameraActivity extends Activity {
 	}
 	
 	public void uploadFile(String imageFilePath) {
-		String actionUrl = "http://192.168.1.103:8080/testsever/Videoservlet";
+		String actionUrl = "http://192.168.1.104:8080/testsever/Videoservlet";
 		System.out.println("��ȡ��ַ");
 		try {
 			URL url = new URL(actionUrl);

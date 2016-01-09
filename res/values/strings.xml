@@ -7,5 +7,9 @@
 	<string name="btn_load">加载</string>
 	<string name="btn_play">播放</string>
 	<string name="btn_pause">暂停</string>
+	<string name="welcome_fri">明星圈子</string>
+	<string name="welcome_netv">票房排行</string>
+	<string name="welcome_localv">原创电影</string>
+	<string name="welcome_addf">电影加工</string>
 
 </resources>

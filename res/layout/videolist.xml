@@ -17,7 +17,11 @@
             android:paddingRight="10dp"
             android:src="@drawable/icon_go_big_white_left" />
     </RelativeLayout>
-
+    <just.lost.gallery.GalleryFlow
+        android:id="@+id/gallery_flow"
+        android:layout_width="fill_parent"
+        android:layout_height="350px"
+        android:layout_marginTop="20px"/>
     <GridView
         android:id="@+id/video_new_select_gridview"
         android:layout_width="match_parent"

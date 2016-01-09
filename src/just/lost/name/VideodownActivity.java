@@ -48,7 +48,7 @@ public class VideodownActivity extends Activity {
     //���пؼ��¼�����
     
     public void loadVideo(){
-    	Uri uri = Uri.parse("http://192.168.1.103:8080/testsever/img/img_3.mp4");
+    	Uri uri = Uri.parse("http://192.168.1.104:8080/testsever/img/img_3.mp4");
 		vv_player.setVideoURI(uri);
 		//���ñ�����Ƶ��Դ·��
 		//vv_player.setVideoPath("/sdcard/video/test.mp4");
